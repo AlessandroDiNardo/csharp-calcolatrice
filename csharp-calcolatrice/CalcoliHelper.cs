@@ -20,7 +20,7 @@ namespace csharp_calcolatrice
         public static int Molt(int x, int y) => x * y;
         public static double Molt( double x, double y) => x * y;
 
-        //metodi per la divisione 
+        //metodo per il valore assoluto 
         public static int ValAss(int x) => Math.Abs(x);
         public static double ValAss( double x ) => Math.Abs(x);
 
@@ -31,6 +31,25 @@ namespace csharp_calcolatrice
         //metodo per il massimo
         public static int Max(int x, int y) => x > y ? x : y;
         public static double Max(double x, double y) => x > y ? x : y;
+
+        //metodo per il calcolo della potenza
+        public static int? Power (int x, int y)
+        {
+            if (y == 0) return 1;
+            if (y < 0 && x == 0) return 0;
+            if (x == 0) return 0;
+            if (x == 1) return 1;
+
+
+            int result = x;
+
+            for (int i = 1; i < ValAss(y); i++)
+            {
+                result *= x;
+            }
+
+            return result;
+        }
 
     }
 }
