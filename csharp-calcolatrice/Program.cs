@@ -1,4 +1,6 @@
-﻿namespace csharp_calcolatrice
+﻿//Il fatto di dover scrivere lo stesso metodo per tipi di parametro diversi applica nella pratica uno dei principi di programmazione ad oggetti… Quale?
+//Polimorfismo
+namespace csharp_calcolatrice
 {
     internal class Program
     {

@@ -21,8 +21,28 @@ namespace csharp_calcolatrice
         public static double Molt( double x, double y) => x * y;
 
         //metodo per il valore assoluto 
-        public static int ValAss(int x) => Math.Abs(x);
-        public static double ValAss( double x ) => Math.Abs(x);
+        public static int ValAss(int x)
+        {
+            if (x < 0)
+            {
+                return -x;
+            }
+            else
+            {
+                return x;
+            }
+        }
+        public static double ValAss( double x )
+        {
+            if (x < 0)
+            {
+                return -x;
+            }
+            else
+            {
+                return x;
+            }
+        }
 
         //metodo per il numero minore
         public static int Min(int x, int y) => x < y ? x : y;
