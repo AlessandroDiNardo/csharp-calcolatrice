@@ -21,8 +21,8 @@ namespace csharp_calcolatrice
         public static double Molt( double x, double y) => x * y;
 
         //metodi per la divisione 
-        public static int Divisione(int x, int y) => x / y;
-        public static double Divisione( double x, double y) => x / y;
+        public static int ValAss(int x) => Math.Abs(x);
+        public static double ValAss( double x ) => Math.Abs(x);
 
         //metodo per il numero minore
         public static int Min(int x, int y) => x < y ? x : y;

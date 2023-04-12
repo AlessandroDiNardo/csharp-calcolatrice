@@ -29,29 +29,30 @@
                 Console.WriteLine("Inserisci dei numeri");
 
             //SOMMA
-            Console.WriteLine($"Somma numeri interi: {CalcoliHelper.Somma(x, y)}");
-            Console.WriteLine($"Somma numeri double: {CalcoliHelper.Somma(a, b)}");
+            Console.WriteLine($"Somma numeri interi {x} + {y}: {CalcoliHelper.Somma(x, y)}");
+            Console.WriteLine($"Somma numeri double {a} + {b}: {CalcoliHelper.Somma(a, b)}\n");
 
             //DIFFERENZA
-            Console.WriteLine($"Differenza numeri interi: {CalcoliHelper.Diff(x, y)}");
-            Console.WriteLine($"Differenza numeri double: {CalcoliHelper.Diff(a, b)}");
+            Console.WriteLine($"Differenza numeri interi {x} - {y}: {CalcoliHelper.Diff(x, y)}");
+            Console.WriteLine($"Differenza numeri double {a} - {b}: {CalcoliHelper.Diff(a, b)}\n");
 
             //MOLTIPLICAZIONE
-            Console.WriteLine($"Moltiplicazione numeri interi: {CalcoliHelper.Molt(x, y)}");
-            Console.WriteLine($"Moltiplicazione numeri double: {CalcoliHelper.Molt(a, b)}");
+            Console.WriteLine($"Moltiplicazione numeri interi {x} * {y}: {CalcoliHelper.Molt(x, y)}");
+            Console.WriteLine($"Moltiplicazione numeri double {a} * {b}: {CalcoliHelper.Molt(a, b)}\n");
 
             //VALORE ASSOLUTO
-            Console.WriteLine($"Divisione numeri interi: {CalcoliHelper.Divisione(x, y)}");
-            Console.WriteLine($"Divisione numeri double: {CalcoliHelper.Divisione(a, b)}");
+            Console.WriteLine($"Valore assoluto numero intero {x}: {CalcoliHelper.ValAss(x)}");
+            Console.WriteLine($"Valore assoluto numeri double {a}: {CalcoliHelper.ValAss(a)}\n");
 
             //MINIMO
-            Console.WriteLine($"Minimo tra due numeri interi: {CalcoliHelper.Min(x, y)}");
-            Console.WriteLine($"Minimo tra due numeri double: {CalcoliHelper.Min(a, b)}");
+            Console.WriteLine($"Minimo tra due numeri interi {x} e {y}: {CalcoliHelper.Min(x, y)}");
+            Console.WriteLine($"Minimo tra due numeri double {a} e {b}: {CalcoliHelper.Min(a, b)}\n");
 
             //MASSIMO
-            Console.WriteLine($"Massimo tra due numeri interi: {CalcoliHelper.Max(x, y)}");
-            Console.WriteLine($"Massimo tra due numeri double: {CalcoliHelper.Max(a, b)}");
+            Console.WriteLine($"Massimo tra due numeri interi {x} e {y}: {CalcoliHelper.Max(x, y)}");
+            Console.WriteLine($"Massimo tra due numeri double {a} e {b}: {CalcoliHelper.Max(a, b)}\n");
 
+            Console.WriteLine("Calcoli completati");
         }
     }
 }
